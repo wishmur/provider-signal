@@ -15,8 +15,15 @@ Project-local; `--no-hooks`; no global install; skill implementation and binary 
 ## Install command (pinned; shown for confirmation before execution)
 
 ```bash
-npx impeccable@4.2.2 install -y --providers=claude --scope=project --no-hooks
+npx impeccable@4.1.0 install -y --providers=claude --scope=project --no-hooks
 ```
+
+## Install record (2026-09-12)
+
+- First attempt pinned `impeccable@4.2.2` and failed: no such launcher version on npm. The 4.2.2 figure was the skill's internal version in the sibling project, not the launcher package version. The corrected pin (4.1.0, the latest published launcher, released 2026-09-08) was shown and approved before running.
+- Result: launcher 4.1.0 installed skill version 4.3.1 into `.claude/skills/impeccable/` (about 14 MB) with engine v0.1.5 (`darwin-arm64`) placed at `.claude/skills/impeccable/scripts/bin/darwin-arm64/impeccable`, and four agent files into `.claude/agents/`. No `.claude/settings.local.json` was written, so no hooks exist. Nothing global was installed.
+- Git: the whole `.claude/` directory shows as ignored; no Impeccable implementation file is tracked.
+- `/impeccable` did not register in the session that ran the install. `init` and `shape` remain pending and are run in a new session per the restart handling below. No manual imitation was substituted.
 
 ## Files it creates or modifies
 

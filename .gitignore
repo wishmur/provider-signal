@@ -39,3 +39,12 @@ reference/
 .env
 .env.*
 !.env.example
+
+# Impeccable: local skill implementation and binary (never committed)
+.claude/skills/impeccable/
+.claude/agents/impeccable-*.md
+# Impeccable: documented per-developer and ephemeral files
+.impeccable/config.local.json
+.impeccable/hook.cache.json
+.impeccable/questions/
+.impeccable/live/
