@@ -6,7 +6,7 @@ Concept Prototype. Evidence review for directory operations. Not an official Hum
 
 Provider Data is Mixed on C1; no candidate fully clears the strict rubric. Provider Data is built as the strongest exploratory take-home prototype. The investment thesis is unvalidated and is stated as such wherever the headline appears.
 
-Headline (verbatim wherever used): In a pre-registered sample of 250 Family Medicine practitioners in Humana's public Medicare Advantage directory, 77 (30.8%, a substantive evidence-conflict rate, not a directory error rate) had at least one substantive evidence conflict across public records, and 76 were attached to a named 2026 plan.
+Headline (verbatim wherever used): In a pre-registered sample of 250 Family Medicine practitioners in Humana's public Medicare Advantage directory, 77 (30.8%, a substantive evidence-conflict rate, not a directory error rate) had at least one substantive evidence conflict across public records, and 76 were attached through the relevant location to a named 2026 plan.
 
 Locked counts (never interchanged): 29 external-consensus B1; 46 multi-source B1; 0 overlap; 75 any B1 address conflict; 4 B2 (2 overlapping B1, 2 B2-only); 77 union; 76 plan-attached; 0 Lane A in 350.
 
@@ -52,7 +52,7 @@ What is real, cached, mocked, synthetic:
 
 ## Vertical workflow (six surfaces)
 
-Exception queue → case detail (evidence comparison) → AI evidence brief → human action → audit history → uncertainty or failure state. Per-screen detail in `docs/UX_SHAPE_PROVISIONAL.md`.
+Exception queue → case detail (evidence comparison) → AI evidence brief → human action → audit history → uncertainty or failure state. Per-screen detail in `docs/UX_SHAPE.md` (confirmed through `/impeccable shape`); visual direction, tokens, and component inventory in `docs/DESIGN_DIRECTION.md`; public references in `docs/DESIGN_REFERENCES.md`.
 
 ## Deterministic baseline (rules only)
 
@@ -97,4 +97,4 @@ Deployment gate: before any public live endpoint, either verify a secure server-
 
 ## Impeccable
 
-Assessment in `docs/IMPECCABLE_ASSESSMENT.md`. Project-local install approved with `--no-hooks`; nothing global; skill implementation and binary untracked; shared design artifacts tracked; `init` and `shape` run interactively. `PRODUCT.md` and `docs/UX_SHAPE_PROVISIONAL.md` are drafted from the adjudication and confirmed through Impeccable once installed.
+Assessment and session record in `docs/IMPECCABLE_ASSESSMENT.md`. Project-local install with `--no-hooks`; nothing global; skill implementation and binary untracked; shared design artifacts tracked. `init` and `shape` ran interactively on 2026-09-12: `PRODUCT.md` carries the Impeccable schema marker and the owner's confirmed additions; `docs/UX_SHAPE.md` is the confirmed six-surface brief; `docs/DESIGN_DIRECTION.md` records the chosen world (Public Registry Record, seed key `5c0fb3e7`), tokens, and component inventory; `docs/DESIGN_REFERENCES.md` records the public references. The direction contract is persisted to the Impeccable surface brief by the new-work flow at Phase 2 build start, and `DESIGN.md` is written by the Impeccable documenter at Phase 2 finish, never before the build.
