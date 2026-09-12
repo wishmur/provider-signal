@@ -35,3 +35,7 @@ reference/
 *.njsproj
 *.sln
 *.sw?
+# Local environment files (never committed)
+.env
+.env.*
+!.env.example
